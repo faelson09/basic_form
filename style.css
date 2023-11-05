@@ -1,0 +1,82 @@
+*{
+   margin: 0;
+}
+body{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-width: 100vw;
+   min-height: 100vh;
+   background-color: #80808052;
+}
+.header{
+   width: 100%;
+   max-width: 800px;
+}
+.header h1{
+   font-size: 24px;
+   font-family: sans-serif;
+   margin-bottom: 10px;
+}
+.form_body{
+   width: 100%;
+   max-width: 800px;
+   display: flex;
+   overflow: hidden;
+   /*border: 2px solid #80808052;*/
+   background-color: white;
+}
+.form_body > .representation, .form_body>.form{
+   width: 50%;
+   height: 380px;
+}
+.form_body>.representation>img{
+width: 60%;
+} 
+.form_body>.representation{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.form_body>.form{
+   background-color: blue;
+   border-bottom-left-radius: 100px;
+   border-top-left-radius: 100px;
+   padding: 30px;
+}
+.form_body > div.form > form{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ margin-top: 50px;
+}
+.form_body > div.form > form input{
+   padding: 8px;
+   border-radius: 8px;
+   border: 2px solid #80808053;
+   margin-top: 6px;
+   margin-bottom: 14px;
+   outline: 2px solid #80808053 ;
+}
+.form_body > div.form > form label{
+   font-family: sans-serif;
+   color: white;
+   text-transform: capitalize;
+   font-size: 14px;
+}
+.button{
+   padding: 8px;
+   border-radius: 8px;
+   border: none;
+   text-transform: capitalize;
+   margin-top: 20px;
+   background-color: white;
+}
+a.button[href="create"]{
+   text-align: center;
+   font-size: 12px;
+   text-decoration: none;
+   margin-top: 30px;
+   color: black;
+}
